@@ -70,6 +70,15 @@ section[id] { scroll-margin-top: 90px; }
 .btn-primary:hover { background: #2f577f; }
 .btn-ghost { border-color: var(--accent); background: var(--surface); color: var(--accent); }
 .btn-ghost:hover { background: var(--accent-soft); }
+.facebook-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  padding: .16rem;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background: #1877f2;
+  fill: #fff;
+}
 .btn.full { width: 100%; }
 .btn.grow { flex: 1; }
 
@@ -294,6 +303,62 @@ section[id] { scroll-margin-top: 90px; }
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 1.5rem;
 }
+.filter-description {
+  grid-column: 1 / -1;
+  margin: 0 0 .25rem;
+  color: var(--muted);
+}
+.filter-features {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: .25rem;
+  margin: 0 0 .25rem;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.filter-features li::before {
+  content: "✦";
+  margin-right: .5rem;
+  color: var(--sage);
+}
+.filter-price {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: baseline;
+  justify-self: start;
+  gap: .4rem;
+  margin: -.65rem 0 .25rem;
+  padding: .5rem .95rem;
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--surface), var(--accent-soft));
+  color: var(--accent);
+  box-shadow: 0 5px 16px rgba(36, 72, 110, .1);
+}
+.filter-price-amount {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+.filter-price-unit {
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  text-align: center;
+}
 
 .card {
   background: var(--surface);
@@ -397,9 +462,10 @@ section[id] { scroll-margin-top: 90px; }
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
-.about-img img {
+.about-img iframe {
   width: 100%;
   aspect-ratio: 4 / 5;
+  border: 0;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -489,6 +555,76 @@ section[id] { scroll-margin-top: 90px; }
   gap: .35rem;
 }
 .pm-meta li::before { content: "\2726"; color: var(--sage); margin-right: .5rem; }
+.pm-options {
+  margin-top: 1.1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: .75rem;
+  background: var(--surface);
+}
+.pm-options[hidden] { display: none; }
+.pm-options h4 {
+  margin: 0 0 .35rem;
+  font-size: .95rem;
+}
+.color-group + .color-group { margin-top: .9rem; }
+.color-group h5 {
+  margin: 0 0 .45rem;
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 600;
+}
+.color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem .75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.color-swatches li {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: var(--ink);
+  font-size: .78rem;
+}
+.color-dot {
+  width: .8rem;
+  height: .8rem;
+  flex: 0 0 .8rem;
+  border: 1px solid rgba(34, 58, 82, .2);
+  border-radius: 50%;
+}
+.swatch-white { background: #fff; }
+.swatch-cream { background: #f4ead6; }
+.swatch-beige { background: #d4b896; }
+.swatch-brown { background: #79543a; }
+.swatch-pink { background: #ed9bb4; }
+.swatch-red { background: #bd3546; }
+.swatch-champagne { background: #e7d5a8; }
+.swatch-orange { background: #ed8a32; }
+.swatch-yellow { background: #f2cf4a; }
+.swatch-green { background: #43845d; }
+.swatch-blue { background: #3c78b5; }
+.swatch-purple { background: #8b63ad; }
+.swatch-yellow-buckle { background: linear-gradient(135deg, #f2cf4a 0 68%, #fff 68%); }
+.swatch-green-buckle { background: linear-gradient(135deg, #43845d 0 68%, #fff 68%); }
+.swatch-pink-buckle { background: linear-gradient(135deg, #ed9bb4 0 68%, #fff 68%); }
+.swatch-brown-buckle { background: linear-gradient(135deg, #79543a 0 68%, #fff 68%); }
+.swatch-black { background: #222; }
+.swatch-black-buckle { background: linear-gradient(135deg, #222 0 68%, #fff 68%); }
+.pm-note {
+  margin: 1rem 0 1.2rem;
+  padding: .8rem 1rem;
+  border-left: 3px solid var(--sage);
+  border-radius: 0 .6rem .6rem 0;
+  background: var(--accent-soft);
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.5;
+}
+.pm-note[hidden] { display: none; }
 
 .field { display: block; margin-bottom: 1rem; }
 .field span {
