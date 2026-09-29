@@ -6,7 +6,7 @@ const PRODUCTS = [
     name: "Strawberry Field Mini Pouch",
     category: "pouch",
     price: 18,
-    image: IMG + "IMG_9375.jpg",
+    image: IMG + "DISPLAY1.jpg",
     badge: "Bestseller",
     note: "Cream cotton, berry-red zip",
     desc: "Wild strawberries and little mushrooms on soft cream cotton, quilted in a diamond grid and finished with a deep berry zip. Roomy enough for cards, coins and a lip balm."

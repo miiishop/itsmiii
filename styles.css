@@ -257,6 +257,38 @@ section[id] { scroll-margin-top: 90px; }
   color: #fff;
 }
 
+.details {
+  padding: 0 0 clamp(3rem, 6vw, 5rem);
+}
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.detail-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.3rem 1.2rem;
+  box-shadow: var(--shadow);
+}
+.detail-card span {
+  display: block;
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: .55rem;
+}
+.detail-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: .35rem;
+}
+.detail-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
