@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MIIISHOP — Handmade Mini Wallets &amp; Mini Pouches</title>
+<meta name="description" content="MIIISHOP handmade quilted mini wallets and mini pouches. Small, sturdy, and made to carry your everyday little things." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark">MIIISHOP</span>
+      <span class="brand-sub">handmade</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#shop">Shop</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+      Cart
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Handmade in small batches</p>
+        <h1>Tiny bags for<br />your everyday things.</h1>
+        <p class="lede">
+          Quilted cotton mini wallets and mini pouches — big enough for cards,
+          coins, lip balm and earbuds. Small enough to disappear into any bag.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Shop the collection</a>
+          <a class="btn btn-ghost" href="#about">Our story</a>
+        </div>
+        <ul class="hero-points">
+          <li>Double-layer quilted cotton</li>
+          <li>Wristlet strap included</li>
+          <li>Ships in 1–3 days</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="asset/jpg/IMG_9375.jpg" alt="Quilted mini pouch with strawberry and mushroom print" />
+        <img src="asset/jpg/IMG_9365.jpg" alt="Quilted mini pouch with pink bow floral print" />
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>MINI WALLET</span><span>•</span><span>MINI POUCH</span><span>•</span>
+      <span>HANDMADE</span><span>•</span><span>QUILTED COTTON</span><span>•</span>
+      <span>MINI WALLET</span><span>•</span><span>MINI POUCH</span><span>•</span>
+      <span>HANDMADE</span><span>•</span><span>QUILTED COTTON</span><span>•</span>
+    </div>
+  </section>
+
+  <section id="shop" class="shop wrap">
+    <div class="section-head">
+      <div>
+        <h2>The collection</h2>
+        <p class="muted">Every piece is cut, quilted and sewn by hand, so prints vary a little.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter products">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="wallet">Mini wallets</button>
+        <button class="chip" data-filter="pouch">Mini pouches</button>
+      </div>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="wrap">
+      <div class="panel gallery-head">
+        <h2>In the wild</h2>
+        <p class="muted">Snapshots from the studio table.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap about-inner">
+      <div class="about-img">
+        <img src="asset/jpg/IMG_9353.jpg" alt="Stack of sage green acorn print mini pouches" />
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">About MIIISHOP</p>
+        <h2>Small things, made slowly.</h2>
+        <p>
+          MIIISHOP started at a kitchen table with one sewing machine and a pile
+          of leftover cotton. We make mini wallets and mini pouches — the kind of
+          thing you reach for every single day without thinking about it.
+        </p>
+        <p>
+          Each piece is quilted in a diamond pattern for structure, lined inside,
+          and finished with a metal zip and a woven MIIISHOP label. No two are
+          identical, because fabric prints never line up the same way twice.
+        </p>
+        <div class="about-stats">
+          <div><strong>100%</strong><span>cotton outer</span></div>
+          <div><strong>2 layers</strong><span>quilted body</span></div>
+          <div><strong>1 by 1</strong><span>sewn by hand</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq wrap">
+    <h2>Good to know</h2>
+    <div class="faq-list">
+      <details>
+        <summary>How big are they?</summary>
+        <p>Mini wallet: approx. 11 × 8 cm. Mini pouch: approx. 13 × 9.5 cm. Both fit cards, coins, keys, lip balm and earbuds.</p>
+      </details>
+      <details>
+        <summary>Does it come with a strap?</summary>
+        <p>Yes — every order includes one paracord wristlet strap. Pick your colour at checkout from the product page.</p>
+      </details>
+      <details>
+        <summary>How do I wash it?</summary>
+        <p>Hand wash cold with mild soap, press between a towel and air dry flat. Don't tumble dry — the quilting will pucker.</p>
+      </details>
+      <details>
+        <summary>Shipping &amp; returns</summary>
+        <p>Orders ship within 1–3 working days. Unused items can be returned within 14 days of delivery.</p>
+      </details>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="brand-mark">MIIISHOP</p>
+      <p class="muted">Handmade with love just for you.</p>
+    </div>
+    <p class="muted small">© <span id="year"></span> MIIISHOP. This is a demo storefront.</p>
+  </div>
+</footer>
+
+<!-- Product detail -->
+<div class="modal" id="productModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="pmTitle">
+    <button class="icon-btn modal-close" data-close aria-label="Close">×</button>
+    <div class="pm-grid">
+      <div class="pm-media">
+        <img id="pmImage" src="" alt="" />
+      </div>
+      <div class="pm-info">
+        <p class="pm-cat" id="pmCat"></p>
+        <h3 id="pmTitle"></h3>
+        <p class="pm-price" id="pmPrice"></p>
+        <p class="pm-desc" id="pmDesc"></p>
+
+        <label class="field">
+          <span>Strap colour</span>
+          <select id="pmStrap">
+            <option>Cream</option>
+            <option>Red</option>
+            <option>Pink</option>
+            <option>Yellow</option>
+            <option>Sage</option>
+            <option>Brown</option>
+          </select>
+        </label>
+
+        <div class="qty-row">
+          <label class="field qty">
+            <span>Qty</span>
+            <input type="number" id="pmQty" value="1" min="1" max="10" />
+          </label>
+          <button class="btn btn-primary grow" id="pmAdd">Add to cart</button>
+        </div>
+
+        <ul class="pm-meta">
+          <li>Metal zip &amp; woven label</li>
+          <li>Wristlet strap included</li>
+          <li>Ships in 1–3 days</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart -->
+<div class="drawer" id="cartDrawer" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="Shopping cart">
+    <header class="drawer-head">
+      <h3>Your cart</h3>
+      <button class="icon-btn" data-close aria-label="Close cart">×</button>
+    </header>
+    <div class="drawer-body" id="cartItems"></div>
+    <footer class="drawer-foot">
+      <div class="row">
+        <span>Subtotal</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <p class="muted small">Shipping calculated at checkout.</p>
+      <button class="btn btn-primary full" id="checkoutBtn">Checkout</button>
+    </footer>
+  </aside>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
