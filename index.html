@@ -41,8 +41,8 @@
         </div>
       </div>
       <div class="hero-art">
-        <img src="asset/jpg/DISPLAY1.jpg" alt="Quilted everyday pouch with strawberry and mushroom print" />
-        <img src="asset/jpg/DISPLAY2.jpg" alt="Quilted everyday pouch with pink bow floral print" />
+        <img src="asset/2DISPLAY.PNG" alt="Quilted everyday pouch with strawberry and mushroom print" />
+        <img src="asset/1DISPLAY.PNG" alt="Quilted everyday pouch with pink bow floral print" />
       </div>
     </div>
   </section>
@@ -160,30 +160,24 @@
     <div class="pm-grid">
       <div class="pm-media">
         <img id="pmImage" src="" alt="" />
+        <button class="pm-image-arrow pm-image-previous" id="pmImagePrevious" type="button" aria-label="Previous product photo" hidden>‹</button>
+        <button class="pm-image-arrow pm-image-next" id="pmImageNext" type="button" aria-label="Next product photo" hidden>›</button>
+        <div class="pm-image-indicators" id="pmImageIndicators" role="group" aria-label="Product photos" hidden></div>
       </div>
       <div class="pm-info">
         <p class="pm-cat" id="pmCat"></p>
         <h3 id="pmTitle"></h3>
+        <p class="sold-out-detail" id="pmSoldOut" hidden>Sold out</p>
         <p class="pm-desc" id="pmDesc"></p>
         <ul class="pm-meta" id="pmMeta"></ul>
         <section class="pm-options" id="pmOptions" aria-label="Zipper, lining, and wristlet color options" hidden>
           <div class="color-group" aria-labelledby="zipperColorsTitle">
             <h5 id="zipperColorsTitle">Zipper colors</h5>
-            <ul class="color-swatches">
-              <li><span class="color-dot swatch-white" aria-hidden="true"></span>White</li>
-              <li><span class="color-dot swatch-cream" aria-hidden="true"></span>Cream</li>
-              <li><span class="color-dot swatch-beige" aria-hidden="true"></span>Beige</li>
-              <li><span class="color-dot swatch-brown" aria-hidden="true"></span>Brown</li>
-              <li><span class="color-dot swatch-pink" aria-hidden="true"></span>Pink</li>
-              <li><span class="color-dot swatch-red" aria-hidden="true"></span>Red</li>
-            </ul>
+            <ul class="color-swatches" id="pmZipperColors"></ul>
           </div>
           <div class="color-group" aria-labelledby="liningColorsTitle">
             <h5 id="liningColorsTitle">Lining colors</h5>
-            <ul class="color-swatches">
-              <li><span class="color-dot swatch-brown" aria-hidden="true"></span>Brown</li>
-              <li><span class="color-dot swatch-champagne" aria-hidden="true"></span>Champagne</li>
-            </ul>
+            <ul class="color-swatches" id="pmLiningColors"></ul>
           </div>
           <div class="color-group" aria-labelledby="wristletColorsTitle">
             <h5 id="wristletColorsTitle">Wristlet colors</h5>
@@ -193,11 +187,11 @@
               <li><span class="color-dot swatch-yellow" aria-hidden="true"></span>Yellow</li>
               <li><span class="color-dot swatch-yellow-buckle" aria-hidden="true"></span>Yellow white</li>
               <li><span class="color-dot swatch-green" aria-hidden="true"></span>Green</li>
-              <li><span class="color-dot swatch-green-buckle" aria-hidden="true"></span>Green white</li>
               <li><span class="color-dot swatch-blue" aria-hidden="true"></span>Blue</li>
               <li><span class="color-dot swatch-purple" aria-hidden="true"></span>Purple</li>
               <li><span class="color-dot swatch-pink" aria-hidden="true"></span>Pink</li>
               <li><span class="color-dot swatch-pink-buckle" aria-hidden="true"></span>Pink white</li>
+              <li><span class="color-dot swatch-white" aria-hidden="true"></span>White</li>
               <li><span class="color-dot swatch-cream" aria-hidden="true"></span>Cream</li>
               <li><span class="color-dot swatch-brown" aria-hidden="true"></span>Brown</li>
               <li><span class="color-dot swatch-brown-buckle" aria-hidden="true"></span>Brown white</li>
